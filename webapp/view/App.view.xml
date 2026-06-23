@@ -1,9 +1,4 @@
-<mvc:View xmlns:m="sap.m"
-    xmlns:mvc="sap.ui.core.mvc"
-    xmlns:f="sap.f"
-    controllerName="shiva.controller.App"
-    displayBlock="true">
+<mvc:View xmlns:f="sap.f" xmlns:mvc="sap.ui.core.mvc"  xmlns="sap.m" controllerName="shiva.controller.App">
 
-    <m:App id="idApp"/>
-
+      <f:FlexibleColumnLayout id="idApp"></f:FlexibleColumnLayout>
 </mvc:View>
