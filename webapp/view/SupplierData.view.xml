@@ -1,11 +1,8 @@
-sap.ui.define(
-    ["shiva/controller/BaseController"],
-    function (BaseController) {
-
-        return BaseController.extend("shiva.controller.Supplier", {
-            onInit: function() {
-
-            }
-        });
-    }
-);
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form" xmlns:t="sap.ui.table" controllerName="shiva.controller.Supplier">
+     
+      <Page title="Supplier  View">
+           <content>
+                <Text text="Hii "></Text>
+           </content>
+      </Page>
+</mvc:View>

@@ -53,7 +53,7 @@
         },
         "routing": {
             "config": {
-                "routerClass": "sap.m.routing.Router",
+                "routerClass": "sap.f.routing.Router",
                 "viewPath": "shiva.view",
                 "viewType": "XML",
                 "controlId": "idApp",
