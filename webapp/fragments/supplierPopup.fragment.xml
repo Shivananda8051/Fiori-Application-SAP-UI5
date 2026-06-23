@@ -1,0 +1,11 @@
+<core:FragmentDefinition
+    xmlns:core="sap.ui.core"
+    xmlns="sap.m">
+
+    <SelectDialog
+        title="Suppliers"
+        search="onSupplierSearch"
+        confirm="onSupplierConfirm">
+    </SelectDialog>
+
+</core:FragmentDefinition>

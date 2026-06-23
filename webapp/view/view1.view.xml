@@ -1,0 +1,58 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form" xmlns:t="sap.ui.table" controllerName="shiva.controller.view1">
+     
+      <Page title="View 1">
+           <headerContent>
+                  <Button icon="sap-icon://action" press="onNext"></Button>
+           </headerContent>
+           <!-- <f:SimpleForm editable="true" width="40%">
+           <Text text="{local>/demo}"/>
+           <f:title>
+                <core:Title text="Login " />
+            </f:title>
+            <f:content>
+                 <Label text="Username" />
+                 <Input id="username"/>
+
+                 <Label text="Password" />
+                 <Input id="password"/>
+                 <Button text="Submit" press="onSubmit"></Button>
+            </f:content>
+            </f:SimpleForm> -->
+  
+            <SearchField placeholder="Search fruits" search="onSearch" id="idSearch"/>
+            <!-- <List id="idList" items="{path: 'local>/fruits', sorter: {path: 'type', group: true}}"> -->
+            <List id="idList" items="{path: 'local>/fruits', sorter: {path: 'type', group: true}}" itemPress="onItemPress" mode="SingleSelectMaster" delete="onDelete" selectionChange="onSelectionChange">
+                
+                <items>
+                     
+                     <ObjectListItem type="Navigation" icon="{local>imageURL}" title="{local>name}" intro="{local>type}" number="{local>price}" numberUnit="{local>currency}">
+                     <firstStatus>
+                            <ObjectStatus text="{local>status}" state="{path: 'local>status', formatter: '.formatter.getsStatus'}"></ObjectStatus>
+                     </firstStatus>
+                     </ObjectListItem>
+                     <!-- <DisplayListItem value="apple" label="Apple" />
+                     <StandardListItem icon="https://cdn-icons-png.flaticon.com/512/928/928194.png" description="this is pineapple" title="Pineapple"></StandardListItem>
+                     <InputListItem label="Which fruit you like?">
+                             <HBox >
+                                     <Input value="Banana" />
+                                     <Button text="Submit" press="onSubmit"></Button>
+                             </HBox>
+                    </InputListItem>
+                    <CustomListItem >
+                              <Label text="Do you like fruit?" />
+                              <Switch />
+                              
+                    </CustomListItem> -->
+                    <!-- <ObjectListItem icon="https://cdn-icons-png.flaticon.com/512/6482/6482621.png" title="Fruits" intro="These are some delicious fruits!" number="70" numberUnit="5 rs per pc" ></ObjectListItem> -->
+                    <!-- <FeedListItem sender="Shivannada" text="I love these fruits!" timestamp="new year"></FeedListItem>
+                    <ActionListItem press="onPress" text="Press Me"></ActionListItem> -->
+                </items>
+            </List>
+            <footer>
+                 <Toolbar>
+                       <ToolbarSpacer />
+                       <Button text="Show me" press="onShowSelectedItems" type="Accept"></Button>
+                 </Toolbar> 
+            </footer>
+      </Page>
+</mvc:View>

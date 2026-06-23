@@ -1,0 +1,117 @@
+{
+    "_version": "1.25.0",
+    "type": "application",
+    "sap.app": {
+        "_version": "1.3.0",
+        "id": "shiva",
+        "type": "application",
+        "applicationVersion": {
+            "version": "1.0.0"
+        },
+        "title": "{{appTitle}}",
+        "description": "{{appDescription}}",
+        "ach": "FIN-AR-ACC"
+    },
+    "sap.ui": {
+        "_version": "1.3.0",
+        "technology": "UI5",
+        "deviceTypes": {
+            "desktop": true,
+            "tablet": true,
+            "phone": true
+        },
+        "supportedThemes": [
+            "sap_fiori_3"
+        ]
+    },
+    "sap.ui5": {
+        "_version": "1.2.0",
+        "dependencies": {
+            "minUI5Version": "1.70.0",
+            "libs": {
+                "sap.m": {
+                    "minVersion": "1.70.0"
+                },
+                "sap.ui.layout": {
+                    "minVersion": "1.70.0"
+                },
+                "sap.f" : {
+                    "minVersion": "1.70.0"
+                }
+            },
+            "components": {}
+        },
+        "contentDensities": {
+            "compact": true,
+            "cozy": true
+        },
+        "rootView": {
+            "viewName": "shiva.view.App",
+            "type": "XML",
+            "id": "app",
+            "async": true
+        },
+        "routing": {
+            "config": {
+                "routerClass": "sap.m.routing.Router",
+                "viewPath": "shiva.view",
+                "viewType": "XML",
+                "controlId": "idApp",
+                "async": true
+            },
+            "routes": [
+                {
+                    "pattern": "",
+                    "name": "home",
+                    "target": ["home", "Empty"]
+                },
+                {
+                    "pattern": "second/{val}",
+                    "name": "second_page",
+                    "target": ["home","view2"]
+                },
+                {
+                    "pattern": "supplier/{supplierId}",
+                    "name": "end",
+                    "target": ["home","end"]
+                }
+            ],
+            "targets": {
+                "home": {
+                    "viewName": "view1",
+                    "viewId": "idShiva",
+                    "controlAggregation": "beginColumnPages"
+                },
+                "view2": {
+                    "viewName": "view2",
+                    "viewId": "idView2",
+                    "controlAggregation": "midColumnPages"
+                },
+                "Empty": {
+                    "viewName": "Empty",
+                    "viewId": "idEmpty",
+                    "controlAggregation": "midColumnPages"
+                },
+                "end": {
+                    "viewName": "SupplierData",
+                    "viewId": "idSupplier",
+                    "controlAggregation": "endColumnPages"
+                }
+            }
+        },
+        "models": {
+            "i18n": {
+                "type": "sap.ui.model.resource.ResourceModel",
+                "uri": "i18n/i18n.properties",
+                "preload": false,
+                "async": true
+            },
+            "local": {
+                "type": "sap.ui.model.json.JSONModel",
+                "settings": {},
+                "uri": "model/mockData/fruits.json",
+                "preload": true
+            }
+        }
+    }
+}

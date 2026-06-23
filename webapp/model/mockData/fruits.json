@@ -1,0 +1,238 @@
+{
+  "fruits": [
+    {
+      "name": "Apples",
+      "type": "Alkaline",
+      "color": "Red",
+      "healthBenefit": "Good for Weight Loss",
+      "imageURL": "https://upload.wikimedia.org/wikipedia/commons/1/15/Red_Apple.jpg",
+      "price": 100,
+      "currency": "INR",
+      "status": "Available"
+    },
+    {
+      "name": "Banana",
+      "type": "Tropical",
+      "color": "Yellow",
+      "healthBenefit": "Rich in Potassium",
+      "imageURL": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Banana-Single.jpg",
+      "price": 60,
+      "currency": "INR",
+      "status": "Discontinued"
+    },
+    {
+      "name": "Orange",
+      "type": "Citrus",
+      "color": "Orange",
+      "healthBenefit": "Rich in Vitamin C",
+      "imageURL": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Orange-Fruit-Pieces.jpg",
+      "price": 80,
+      "currency": "INR",
+      "status": "Available"
+    },
+    {
+      "name": "Mango",
+      "type": "Tropical",
+      "color": "Yellow",
+      "healthBenefit": "Improves Digestion",
+      "imageURL": "https://upload.wikimedia.org/wikipedia/commons/9/90/Hapus_Mango.jpg",
+      "price": 150,
+      "currency": "INR",
+      "status": "Available"
+    },
+    {
+      "name": "Pineapple",
+      "type": "Tropical",
+      "color": "Brown",
+      "healthBenefit": "Boosts Immunity",
+      "imageURL": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Pineapple_and_cross_section.jpg",
+      "price": 120,
+      "currency": "INR",
+      "status": "Out of Stock"
+    },
+    {
+      "name": "Watermelon",
+      "type": "Alkaline",
+      "color": "Green",
+      "healthBenefit": "Hydrates Body",
+      "imageURL": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Watermelon_cross_BNC.jpg",
+      "price": 90,
+      "currency": "INR",
+      "status": "Available"
+    },
+    {
+      "name": "Papaya",
+      "type": "Tropical",
+      "color": "Orange",
+      "healthBenefit": "Improves Digestion",
+      "imageURL": "https://upload.wikimedia.org/wikipedia/commons/0/09/Papaya_-_longitudinal_section.jpg",
+      "price": 70,
+      "currency": "INR",
+      "status": "Out of Stock"
+    },
+    {
+      "name": "Grapes",
+      "type": "Alkaline",
+      "color": "Purple",
+      "healthBenefit": "Good for Heart",
+      "imageURL": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Table_grapes_on_white.jpg",
+      "price": 110,
+      "currency": "INR",
+      "status": "Out of Stock"
+    },
+    {
+      "name": "Kiwi",
+      "type": "Berry",
+      "color": "Brown",
+      "healthBenefit": "Rich in Antioxidants",
+      "imageURL": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Kiwi_aka.jpg",
+      "price": 180,
+      "currency": "INR",
+      "status": "Discontinued"
+    },
+    {
+      "name": "Strawberry",
+      "type": "Berry",
+      "color": "Red",
+      "healthBenefit": "Improves Skin Health",
+      "imageURL": "https://upload.wikimedia.org/wikipedia/commons/2/29/PerfectStrawberry.jpg",
+      "price": 250,
+      "currency": "INR",
+      "status": "Available"
+    }
+  ],
+
+  "suppliers": [
+    {
+      "name": "Mahadev Suppliers",
+      "sinceWhen": 1977,
+      "contactPerson": "Shiva",
+      "contactNo": 9491233441,
+      "city": "New Delhi",
+      "latitude": 28.610001,
+      "longitude": 77.230003,
+      "suppFruits": [
+        {
+          "name": "Banana"
+        },
+        {
+          "name": "Apples"
+        },
+        {
+          "name": "Mango"
+        }
+      ]
+    },
+    {
+      "name": "Fresh Farms Pvt Ltd",
+      "sinceWhen": 1988,
+      "contactPerson": "Ramesh",
+      "contactNo": 9876543210,
+      "city": "Mumbai",
+      "latitude": 19.0760,
+      "longitude": 72.8777,
+      "suppFruits": [
+        {
+          "name": "Orange"
+        },
+        {
+          "name": "Pineapple"
+        },
+        {
+          "name": "Watermelon"
+        }
+      ]
+    },
+    {
+      "name": "Green Valley Traders",
+      "sinceWhen": 2001,
+      "contactPerson": "Priya",
+      "contactNo": 9123456780,
+      "city": "Bangalore",
+      "latitude": 12.9716,
+      "longitude": 77.5946,
+      "suppFruits": [
+        {
+          "name": "Kiwi"
+        },
+        {
+          "name": "Grapes"
+        },
+        {
+          "name": "Strawberry"
+        }
+      ]
+    },
+    {
+      "name": "Nature Basket Supply",
+      "sinceWhen": 1995,
+      "contactPerson": "Kiran",
+      "contactNo": 9988776655,
+      "city": "Hyderabad",
+      "latitude": 17.3850,
+      "longitude": 78.4867,
+      "suppFruits": [
+        {
+          "name": "Papaya"
+        },
+        {
+          "name": "Banana"
+        },
+        {
+          "name": "Mango"
+        }
+      ]
+    }
+  ],
+
+  "cities": [
+    {
+      "name": "Jaipur",
+      "famousFor": "Forts",
+      "type": "Tier2",
+      "otherName": "Pink City"
+    },
+    {
+      "name": "Mumbai",
+      "famousFor": "Film Industry",
+      "type": "Metro",
+      "otherName": "City of Dreams"
+    },
+    {
+      "name": "New Delhi",
+      "famousFor": "Historical Monuments",
+      "type": "Metro",
+      "otherName": "Capital City"
+    },
+    {
+      "name": "Bangalore",
+      "famousFor": "IT Industry",
+      "type": "Metro",
+      "otherName": "Silicon Valley of India"
+    },
+    {
+      "name": "Hyderabad",
+      "famousFor": "Biryani",
+      "type": "Tier1",
+      "otherName": "City of Pearls"
+    },
+    {
+      "name": "Chennai",
+      "famousFor": "Marina Beach",
+      "type": "Metro",
+      "otherName": "Detroit of India"
+    },
+    {
+      "name": "Pune",
+      "famousFor": "Education",
+      "type": "Tier1",
+      "otherName": "Oxford of the East"
+    },
+    {
+      "name": "Kolkata",
+      "famousFor": "Culture",
+      "type": "Metro",
+      "otherName": "City of Joy"
+    }
+  ]
+}

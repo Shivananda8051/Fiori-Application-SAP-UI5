@@ -1,0 +1,9 @@
+<mvc:View xmlns:m="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:f="sap.f"
+    controllerName="shiva.controller.App"
+    displayBlock="true">
+
+    <m:App id="idApp"/>
+
+</mvc:View>
